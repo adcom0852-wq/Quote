@@ -6,7 +6,7 @@
 
 A modern, installable **Progressive Web App (PWA)** for discovering, searching, and sharing curated quotes. Built with vanilla HTML, CSS, and JavaScript — no frameworks required. Features a beautiful glassmorphism UI, dark/light mode, offline caching, and a full admin dashboard backed by Supabase.
 
-![Quotes App Preview](https://adcom0852-wq.github.io/Quote/index.html)
+![Quotes App Preview](./screenshots/preview.png)
 
 ---
 
