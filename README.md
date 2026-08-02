@@ -1,8 +1,3 @@
-```markdown
-## README.md
-```
-
-```markdown
 # Quotes — Daily Inspiration
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
