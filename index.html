@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes — Daily Inspiration</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-gradient bg-gradient-2"></div>
+  <div class="bg-noise"></div>
+
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <p class="loading-text">Loading Quotes...</p>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-quote-left"></i>
+        <span>Quotes</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="login.html" class="nav-link">Admin</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Wisdom</h1>
+        <p class="hero-subtitle">Curated quotes to inspire, motivate, and transform your day.</p>
+      </div>
+    </section>
+
+    <section class="featured-section" id="featuredSection">
+      <div class="section-header">
+        <h2 class="section-title">
+          <i class="fas fa-star"></i>
+          Featured Quote
+        </h2>
+      </div>
+      <div class="featured-card" id="featuredCard">
+        <div class="featured-loading">
+          <div class="loading-ring small">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes-section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <i class="fas fa-book-open"></i>
+          All Quotes
+        </h2>
+        <span class="quotes-count" id="quotesCount">0 quotes</span>
+      </div>
+
+      <div class="controls-bar">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search quotes or authors..." autocomplete="off">
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="filter-box">
+          <i class="fas fa-filter"></i>
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="quotes-grid" id="quotesGrid">
+        <div class="quotes-loading">
+          <div class="loading-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <p>Loading quotes...</p>
+        </div>
+      </div>
+
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search"></i>
+        <h3>No quotes found</h3>
+        <p>Try adjusting your search or filter.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p> Quotes App. Built with inspiration.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
